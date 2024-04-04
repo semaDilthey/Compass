@@ -5,4 +5,7 @@
 //  Created by Семен Гайдамакин on 04.04.2024.
 //
 
-import Foundation
+enum LocationError : Error {
+    case locationAccessError
+    case wrongLocation
+}

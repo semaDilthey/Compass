@@ -9,19 +9,41 @@
 /* Begin PBXBuildFile section */
 		3F0A37E52BBED8D500DA839A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A37E42BBED8D500DA839A /* AppDelegate.swift */; };
 		3F0A37E72BBED8D500DA839A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A37E62BBED8D500DA839A /* SceneDelegate.swift */; };
-		3F0A37E92BBED8D500DA839A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A37E82BBED8D500DA839A /* ViewController.swift */; };
+		3F0A37E92BBED8D500DA839A /* CompasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A37E82BBED8D500DA839A /* CompasViewController.swift */; };
 		3F0A37EE2BBED8D600DA839A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0A37ED2BBED8D600DA839A /* Assets.xcassets */; };
 		3F0A37F12BBED8D600DA839A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0A37EF2BBED8D600DA839A /* LaunchScreen.storyboard */; };
+		3F0A38012BBEE36100DA839A /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A38002BBEE36100DA839A /* LocationService.swift */; };
+		3F0A38032BBEE49A00DA839A /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A38022BBEE49A00DA839A /* Directions.swift */; };
+		3F0A38052BBEF39500DA839A /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A38042BBEF39500DA839A /* LocationError.swift */; };
+		3F0A38082BBEFD5B00DA839A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A38072BBEFD5B00DA839A /* BaseView.swift */; };
+		3F0A380B2BBEFE3000DA839A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A380A2BBEFE3000DA839A /* BaseViewController.swift */; };
+		3F0A380E2BBF008600DA839A /* CompasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A380D2BBF008600DA839A /* CompasViewModel.swift */; };
+		3F0A38102BBF034400DA839A /* CompasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A380F2BBF034400DA839A /* CompasModel.swift */; };
+		3F0A38132BBF183D00DA839A /* BackGroundStaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A38122BBF183D00DA839A /* BackGroundStaticView.swift */; };
+		3F0A38152BBF215800DA839A /* RoatatingDynamicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A38142BBF215800DA839A /* RoatatingDynamicView.swift */; };
+		3F0A38172BBF2F9D00DA839A /* CompasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A38162BBF2F9D00DA839A /* CompasView.swift */; };
+		3F0A381A2BBF5B5B00DA839A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A38192BBF5B5B00DA839A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F0A37E12BBED8D500DA839A /* Compass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0A37E42BBED8D500DA839A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F0A37E62BBED8D500DA839A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F0A37E82BBED8D500DA839A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F0A37E82BBED8D500DA839A /* CompasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompasViewController.swift; sourceTree = "<group>"; };
 		3F0A37ED2BBED8D600DA839A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F0A37F02BBED8D600DA839A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F0A37F22BBED8D600DA839A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0A38002BBEE36100DA839A /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		3F0A38022BBEE49A00DA839A /* Directions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
+		3F0A38042BBEF39500DA839A /* LocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
+		3F0A38072BBEFD5B00DA839A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		3F0A380A2BBEFE3000DA839A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3F0A380D2BBF008600DA839A /* CompasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompasViewModel.swift; sourceTree = "<group>"; };
+		3F0A380F2BBF034400DA839A /* CompasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompasModel.swift; sourceTree = "<group>"; };
+		3F0A38122BBF183D00DA839A /* BackGroundStaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGroundStaticView.swift; sourceTree = "<group>"; };
+		3F0A38142BBF215800DA839A /* RoatatingDynamicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoatatingDynamicView.swift; sourceTree = "<group>"; };
+		3F0A38162BBF2F9D00DA839A /* CompasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompasView.swift; sourceTree = "<group>"; };
+		3F0A38192BBF5B5B00DA839A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +104,8 @@
 		3F0A37FA2BBEDA0000DA839A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3F0A37E82BBED8D500DA839A /* ViewController.swift */,
+				3F0A38092BBEFE2700DA839A /* Base */,
+				3F0A380C2BBF005300DA839A /* Compas */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -90,6 +113,7 @@
 		3F0A37FB2BBEDA1000DA839A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3F0A38182BBF5B5200DA839A /* Constants */,
 				3F0A37FF2BBEDADD00DA839A /* Components */,
 				3F0A37FE2BBEDA6000DA839A /* Service */,
 				3F0A37FC2BBEDA5500DA839A /* Extensions */,
@@ -109,6 +133,9 @@
 		3F0A37FE2BBEDA6000DA839A /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3F0A38002BBEE36100DA839A /* LocationService.swift */,
+				3F0A38042BBEF39500DA839A /* LocationError.swift */,
+				3F0A38022BBEE49A00DA839A /* Directions.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -116,8 +143,54 @@
 		3F0A37FF2BBEDADD00DA839A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3F0A38062BBEFD5200DA839A /* BaseView */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		3F0A38062BBEFD5200DA839A /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				3F0A38072BBEFD5B00DA839A /* BaseView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		3F0A38092BBEFE2700DA839A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3F0A380A2BBEFE3000DA839A /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3F0A380C2BBF005300DA839A /* Compas */ = {
+			isa = PBXGroup;
+			children = (
+				3F0A38112BBF11EE00DA839A /* Components */,
+				3F0A37E82BBED8D500DA839A /* CompasViewController.swift */,
+				3F0A380F2BBF034400DA839A /* CompasModel.swift */,
+				3F0A380D2BBF008600DA839A /* CompasViewModel.swift */,
+			);
+			path = Compas;
+			sourceTree = "<group>";
+		};
+		3F0A38112BBF11EE00DA839A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3F0A38122BBF183D00DA839A /* BackGroundStaticView.swift */,
+				3F0A38162BBF2F9D00DA839A /* CompasView.swift */,
+				3F0A38142BBF215800DA839A /* RoatatingDynamicView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3F0A38182BBF5B5200DA839A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3F0A38192BBF5B5B00DA839A /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +263,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F0A37E92BBED8D500DA839A /* ViewController.swift in Sources */,
+				3F0A38132BBF183D00DA839A /* BackGroundStaticView.swift in Sources */,
+				3F0A38012BBEE36100DA839A /* LocationService.swift in Sources */,
+				3F0A37E92BBED8D500DA839A /* CompasViewController.swift in Sources */,
 				3F0A37E52BBED8D500DA839A /* AppDelegate.swift in Sources */,
+				3F0A38052BBEF39500DA839A /* LocationError.swift in Sources */,
+				3F0A38082BBEFD5B00DA839A /* BaseView.swift in Sources */,
+				3F0A380B2BBEFE3000DA839A /* BaseViewController.swift in Sources */,
 				3F0A37E72BBED8D500DA839A /* SceneDelegate.swift in Sources */,
+				3F0A38172BBF2F9D00DA839A /* CompasView.swift in Sources */,
+				3F0A380E2BBF008600DA839A /* CompasViewModel.swift in Sources */,
+				3F0A38102BBF034400DA839A /* CompasModel.swift in Sources */,
+				3F0A381A2BBF5B5B00DA839A /* Constants.swift in Sources */,
+				3F0A38032BBEE49A00DA839A /* Directions.swift in Sources */,
+				3F0A38152BBF215800DA839A /* RoatatingDynamicView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

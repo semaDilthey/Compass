@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Direction: String, CaseIterable, RawRepresentable {
+enum Direction: String, CaseIterable {
     case north = "N"
     case northEast = "NE"
     case east = "E"

@@ -7,12 +7,13 @@
 
 import Foundation
 import CoreLocation
+import Combine
 
 //MARK: - Interface
 
 protocol ILocationService : AnyObject {
-    var didUpdateHeading : ((CLLocationDirection)->Void)? { get set }
-    var didUpdateLocation: ((String) -> Void)? { get set }
+    var didUpdateLocation : PassthroughSubject<String, Never> { get set }
+    var didUpdateHeading : PassthroughSubject<CLLocationDirection, Never> { get set }
 }
 
 //MARK: - LocationServiceClass
@@ -23,8 +24,8 @@ final class LocationService : NSObject, ILocationService {
     
     private let locationManager = CLLocationManager()
 
-    public var didUpdateHeading : ((CLLocationDirection)->Void)?
-    public var didUpdateLocation: ((String) -> Void)?
+    public var didUpdateLocation = PassthroughSubject<String, Never>()
+    public var didUpdateHeading = PassthroughSubject<CLLocationDirection, Never>()
     
     //MARK: - Initializtion
     
@@ -60,8 +61,8 @@ final class LocationService : NSObject, ILocationService {
                 return
             }
             
-            if let address = placemark.name {
-                self?.didUpdateLocation?(address)
+            if let address = placemark.locality {
+                self?.didUpdateLocation.send(address)
             }
         }
     }
@@ -73,7 +74,7 @@ final class LocationService : NSObject, ILocationService {
 extension LocationService : CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        didUpdateHeading?(newHeading.magneticHeading)
+        didUpdateHeading.send(newHeading.magneticHeading)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

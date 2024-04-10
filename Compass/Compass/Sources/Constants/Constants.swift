@@ -5,7 +5,7 @@
 //  Created by Семен Гайдамакин on 05.04.2024.
 //
 
-import Foundation
+import UIKit
 
 enum C {
     
@@ -15,5 +15,9 @@ enum C {
     
     enum Strings {
         static let radians = "°"
+    }
+    
+    enum Images {
+        static let settings = UIImage(named: "settings")
     }
 }

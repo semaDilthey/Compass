@@ -159,10 +159,8 @@
 		3F0A37FE2BBEDA6000DA839A /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				3F0A38002BBEE36100DA839A /* LocationService.swift */,
-				3FFD2FF12BC6D023004BB37F /* UDManager.swift */,
-				3F0A38042BBEF39500DA839A /* LocationError.swift */,
-				3F0A38022BBEE49A00DA839A /* Directions.swift */,
+				3FFD2FF32BC72ABD004BB37F /* Location */,
+				3FFD2FF42BC72AC8004BB37F /* UserDefaults */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -312,6 +310,24 @@
 				3FD2C91E2BC6A3B300C7D9E5 /* SettingsCellContentView.swift */,
 			);
 			path = SettingsCell;
+			sourceTree = "<group>";
+		};
+		3FFD2FF32BC72ABD004BB37F /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				3F0A38002BBEE36100DA839A /* LocationService.swift */,
+				3F0A38042BBEF39500DA839A /* LocationError.swift */,
+				3F0A38022BBEE49A00DA839A /* Directions.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		3FFD2FF42BC72AC8004BB37F /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				3FFD2FF12BC6D023004BB37F /* UDManager.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

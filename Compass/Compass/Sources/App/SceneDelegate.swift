@@ -11,13 +11,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         let compasVM = CompasViewModel()
         let vc = CompasViewController(viewModel: compasVM)
-        window?.rootViewController = vc
+        let rootVC = BaseNavController(rootViewController: vc)
+        window?.rootViewController = rootVC
         window?.makeKeyAndVisible()
     }
 
